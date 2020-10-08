@@ -1,5 +1,8 @@
 For the reviewer : Most recent fixes include: 
- 
+- config was not being loaded : Fix --> db = SQLAlchemy() instead of db = SQLAlchemy(app) in models.py
+- Changed Debug = True to False to avoid psycopg2 error.
+
+ ------------
 - Moved models to models.py, 
 - removed extraneous print statements, 
 - updated all fields in forms, 
