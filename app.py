@@ -2,6 +2,7 @@
 # Imports
 #----------------------------------------------------------------------------#
 from models import app, db, Venue, Artist, Show
+import config
 import json
 import dateutil.parser
 import babel

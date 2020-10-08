@@ -10,7 +10,9 @@ from flask_migrate import Migrate
 #----------------------------------------------------------------------------#
 
 app = Flask(__name__)
-db = SQLAlchemy(app)
+db = SQLAlchemy()
+#db = SQLAlchemy(app) -- This method causes error
+
 migrate = Migrate(app, db, compare_type=True)
 
 #----------------------------------------------------------------------------#
